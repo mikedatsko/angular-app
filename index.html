@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Learning</title>
+  <link rel="stylesheet" type="text/css" href="./css/app.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body ng-app="AngularProject">
+  <app ng-init="window.parent.postMessage('FRAME_LOADED', 'https://jsmeasure.herokuapp.com');"></app>
+
+  <!-- Scripts -->
+  <script src="./js/vendors/angular.min.js"></script>
+  <script src="./js/vendors/angular-uuid.js"></script>
+  <script src="./js/vendors/cabit.js"></script>
+  <script src="./js/app.js"></script>
+
+  <!-- Services -->
+  <script src="./js/app/services/data.service.js"></script>
+
+  <!-- Controllers -->
+  <script src="./js/app/controllers/add-todo.controller.js"></script>
+  <script src="./js/app/controllers/todos.controller.js"></script>
+
+  <!-- Directives -->
+  <script src="./js/app/directives/app.directive.js"></script>
+  <script src="./js/app/directives/add-todo.directive.js"></script>
+  <script src="./js/app/directives/todos.directive.js"></script>
+</body>
+</html>
